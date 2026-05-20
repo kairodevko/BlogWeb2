@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap'); /* Fuente Inika */
+
+/* Display Completo */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Playfair Display', serif;
+    min-height: 100vh;
+    padding: 40px;
+    background: radial-gradient(circle at top left,
+        rgba(255,255,255,0.08),
+        transparent 35%),
+
+        linear-gradient(
+        135deg,
+        #14001f 0%,
+        #2a1238 40%,
+
+        #66ff33 60%,
+        
+        #66ff33 40%,
+        #442b55 100%
+        );
+}
+
+/* =========================
+   CONTENEDOR GENERAL
+========================= */
+.content-general{
+    width: 100%;
+
+   
+       
+
+    border: 2px solid #1a1a1a;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.25);
+    padding-bottom: 80px;
+}
+
+/* =========================
+   HEADER
+========================= */
+.title-page-juanes{
+    position: absolute;
+    top: 80px;
+    left: 70px;
+    color: #ffffff;
+    font-size: 5rem;
+    font-family: 'Abril Fatface', serif;
+    letter-spacing: 2px;
+    z-index: 10;
+}
+
+/* =========================
+   MENU
+========================= */
+.menu-content{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 18px;
+    padding: 80px 60px 70px 60px;
+}
+
+.menu-content a{
+    text-decoration: none;
+    background: #42ff00;
+    color: #000;
+    padding: 14px 28px;
+
+    font-size: 1.1rem;
+    font-weight: 700;
+    transition: .3s ease;
+    box-shadow: 0 0 10px rgba(66,255,0,0.15);
+}
+
+.menu-content a:hover{
+    transform: translateY(-4px);
+    background: #66ff33;
+    box-shadow: 0 0 18px rgba(66,255,0,0.4);
+}
+
+/* =========================
+   HR
+========================= */
+hr{
+    border: none;
+    height: 2px;
+    background: #42ff00;
+    margin-bottom: 70px;
+}
+
+/* =========================
+   SECCIONES
+========================= */
+.content-bio,
+.content-metas,
+.content-hobbies,
+.content-musica,
+.content-contacto{
+    width: 90%;
+    margin: 0 auto 80px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* =========================
+   TITULOS
+========================= */
+.content-bio h2,
+.content-metas h2,
+.content-hobbies h2,
+.content-musica h2,
+.content-contacto h2{
+    color: #f1e8ea;
+    font-size: 4rem;
+    margin-bottom: 40px;
+    font-family: 'Abril Fatface', serif;
+    letter-spacing: 2px;
+}
+
+/* =========================
+   CAJAS DE TEXTO
+========================= */
+.p-text-bio-juanes,
+.p-text-metas,
+.p-text-hobbies,
+.p-text-musica,
+.p-text-contacto,
+.content-hobbies ul{
+    width: 95%;
+    background: rgba(255,255,255,0.45);
+    padding: 70px;
+    color: #111;
+    font-size: 2rem;
+    line-height: 1.8;
+    box-shadow:
+    inset 0 20px 20px rgba(255,255,255,0.25);
+
+    backdrop-filter: blur(3px);
+}
+
+/* =========================
+   HOBBIES LIST
+========================= */
+.content-hobbies ul{
+    margin-top: 20px;
+    padding-left: 100px;
+}
+
+.content-hobbies li{
+    margin-bottom: 15px;
+}
+
+/* =========================
+   GITHUB LINK
+========================= */
+.link-github-no-captura{
+    margin-top: 30px;
+}
+
+.link-github-no-captura a{
+    text-decoration: none;
+    background: #42ff00;
+    color: #000;
+    padding: 18px 40px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: .3s ease;
+}
+
+.link-github-no-captura a:hover{
+    background: #66ff33;
+    box-shadow: 0 0 18px rgba(66,255,0,0.4);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media(max-width: 1200px){
+
+    .title-page-juanes{
+        position: static;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .menu-content{
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-top: 20px;
+    }
+}
+
+@media(max-width: 768px){
+
+    body{
+        padding: 15px;
+    }
+
+    .title-page-juanes{
+        font-size: 3rem;
+    }
+
+    .content-bio h2,
+    .content-metas h2,
+    .content-hobbies h2,
+    .content-musica h2,
+    .content-contacto h2{
+        font-size: 2.5rem;
+
+        text-align: center;
+    }
+
+    .p-text-bio-juanes,
+    .p-text-metas,
+    .p-text-hobbies,
+    .p-text-musica,
+    .p-text-contacto,
+    .content-hobbies ul{
+        padding: 35px;
+
+        font-size: 1.2rem;
+    }
+
+    .content-hobbies ul{
+        padding-left: 60px;
+    }
+
+    .menu-content a{
+        width: 100%;
+
+        text-align: center;
+    }
+}

@@ -1,0 +1,431 @@
+/* FUENETE PRINCIPAL INIKA*/
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap');
+
+/* parte principal */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   GENERAL
+========================= */
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Inika', serif;
+
+    min-height: 100vh;
+
+    padding: 40px;
+
+    background:
+    radial-gradient(circle at top left,
+        rgba(255,255,255,0.08),
+        transparent 35%),
+
+        linear-gradient(
+        135deg,
+        #14001f 0%,
+        #2a1238 40%,
+        #66ff33 60%,
+        #442b55 100%
+        );
+
+    overflow-x: hidden;
+}
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+.content-general{
+    width: 100%;
+
+    background:
+    linear-gradientradial-gradient(circle at top left,
+        rgba(255,255,255,0.08),
+        transparent 35%),
+
+        linear-gradient(
+        135deg,
+        #14001f 0%,
+        #2a1238 40%,
+
+        #66ff33 60%,
+        
+        #66ff33 40%,
+        #442b55 100%
+        );
+    
+}
+
+/* =========================
+   CONTENEDOR GENERAL
+========================= */
+.content-general{
+    width: 100%;
+
+   
+       
+
+    border: 2px solid #1a1a1a;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.25);
+    padding-bottom: 80px;
+}
+
+/* efecto glow */
+.content-general::before{
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    background: rgba(170, 71, 255, 0.08);
+
+    border-radius: 50%;
+
+    top: -200px;
+    right: -150px;
+
+    filter: blur(50px);
+}
+
+/* =========================
+   TITLE
+========================= */
+.title-page-kairo{
+    position: absolute;
+
+    top: 70px;
+    left: 70px;
+
+    font-size: 5rem;
+
+    color: #f5edf3;
+
+    font-family: 'Inika', serif;
+
+    letter-spacing: 3px;
+
+    z-index: 10;
+
+    text-shadow:
+    0 0 20px rgba(187,114,255,0.2);
+}
+
+/* =========================
+   MENU
+========================= */
+.menu-content{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 18px;
+    padding: 80px 60px 70px 60px;
+}
+
+
+.menu-content a{
+    position: relative;
+    z-index: 100;
+}
+
+
+.menu-content a{
+    text-decoration: none;
+    background: #42ff00;
+    color: #000;
+    padding: 14px 28px;
+
+    font-size: 1.1rem;
+    font-weight: 700;
+    transition: .3s ease;
+    box-shadow: 0 0 10px rgba(66,255,0,0.15);
+}
+
+.menu-content a:hover{
+    transform: translateY(-4px);
+    background: #66ff33;
+    box-shadow: 0 0 18px rgba(66,255,0,0.4);
+}
+
+
+/* =========================
+   LINE
+========================= */
+hr{
+    border: none;
+
+    height: 2px;
+
+    background:
+    linear-gradient(
+        to right,
+        transparent,
+        #b15cff,
+        transparent
+    );
+
+    margin-bottom: 80px;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+.content-bio,
+.content-metas,
+.content-gustos,
+.content-musica,
+.content-contacto{
+    width: 90%;
+
+    margin: 0 auto 90px auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* =========================
+   TITLES
+========================= */
+.content-bio h2,
+.content-metas h2,
+.content-gustos h2,
+.content-musica h2,
+.content-contacto h2{
+    font-size: 4rem;
+
+    color: #f5edf3;
+
+    margin-bottom: 40px;
+
+    letter-spacing: 2px;
+
+    text-shadow:
+    0 0 15px rgba(187,114,255,0.15);
+}
+
+/* =========================
+   TEXT BOXES
+========================= */
+.p-text-bio-kairo,
+.p-text-metas{
+    width: 95%;
+
+    background:
+    rgba(255,255,255,0.08);
+
+    border:
+    1px solid rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(12px);
+
+    padding: 60px;
+
+    color: #f3edf7;
+
+    font-size: 1.5rem;
+
+    line-height: 1.9;
+
+    box-shadow:
+    inset 0 1px 1px rgba(255,255,255,0.08),
+    0 10px 30px rgba(0,0,0,0.18);
+}
+.p-text-musica,
+.p-text-contacto,
+.p-text-gustos{
+    width: 95%;
+
+    background:
+    rgba(255,255,255,0.08);
+
+    border:
+    1px solid rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(12px);
+
+    padding: 60px;
+
+    color: #070707;
+
+    font-size: 1.5rem;
+
+    line-height: 1.9;
+
+    box-shadow:
+    inset 0 1px 1px rgba(255,255,255,0.08),
+    0 10px 30px rgba(0,0,0,0.18);
+}
+
+/* =========================
+   GUSTOS SECTION
+========================= */
+.img-gustos-kairo{
+    width: 320px;
+    height: 420px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    margin-bottom: 35px;
+
+    border: 2px solid rgba(255,255,255,0.08);
+
+    box-shadow:
+    0 0 25px rgba(170,71,255,0.18);
+
+    transition: .4s ease;
+}
+
+.img-gustos-kairo:hover{
+    transform: scale(1.03);
+}
+
+.content-gustos ul{
+    width: 95%;
+
+    margin-top: 30px;
+
+    background:
+    rgba(255,255,255,0.05);
+
+    padding: 50px 70px;
+
+    border:
+    1px solid rgba(255,255,255,0.08);
+
+    list-style: square;
+
+    color: #ffffff;
+}
+
+.content-gustos li{
+    margin-bottom: 20px;
+
+    font-size: 1.3rem;
+}
+
+.content-gustos li a{
+    color: #161516;
+    font-size: 1.3rem;
+
+    text-decoration: none;
+
+    transition: .3s ease;
+}
+
+.content-gustos li a:hover{
+    color: #751e75;
+
+    text-shadow:
+    0 0 12px rgba(187,114,255,0.5);
+}
+
+/* =========================
+   CONTACT BUTTON
+========================= */
+.link-github-no-captura{
+    margin-top: 30px;
+}
+
+.link-github-no-captura a{
+    text-decoration: none;
+
+    background: #7a35ad;
+
+    color: #ffffff;
+
+    padding: 18px 45px;
+
+    font-size: 1.1rem;
+    font-weight: 700;
+
+    transition: .3s ease;
+
+    border:
+    1px solid rgba(255,255,255,0.08);
+}
+
+.link-github-no-captura a:hover{
+    transform: translateY(-4px);
+
+    background: #9c52d4;
+
+    box-shadow:
+    0 0 20px rgba(170,71,255,0.35);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media(max-width: 1200px){
+
+    .title-page-kairo{
+        position: static;
+
+        text-align: center;
+
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .menu-content{
+        justify-content: center;
+
+        padding-top: 20px;
+    }
+}
+
+@media(max-width: 768px){
+
+    body{
+        padding: 15px;
+    }
+
+    .title-page-kairo{
+        font-size: 3rem;
+    }
+
+    .content-bio h2,
+    .content-metas h2,
+    .content-gustos h2,
+    .content-musica h2,
+    .content-contacto h2{
+        font-size: 2.3rem;
+
+        text-align: center;
+    }
+
+    .p-text-bio-kairo,
+    .p-text-metas,
+    .p-text-gustos,
+    .p-text-musica,
+    .p-text-contacto{
+        padding: 35px;
+
+        font-size: 1.1rem;
+    }
+
+    .content-gustos ul{
+        padding: 35px;
+    }
+
+    .img-gustos-kairo{
+        width: 100%;
+        height: auto;
+    }
+
+    .menu-content a{
+        width: 100%;
+
+        text-align: center;
+    }
+}
