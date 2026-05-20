@@ -1,0 +1,287 @@
+/* Fuente importada: Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+/* Toda la pantalla principal del hero */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cuerpo del documento */
+body{
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(circle at top left,
+        rgba(255,255,255,0.08),
+        transparent 35%),
+
+        linear-gradient(
+        135deg,
+        #14001f 0%,
+        #2a1238 40%,
+        #442b55 100%
+        );
+}
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+main{
+    width: 100%;
+    max-width: 900px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+/* =========================
+   TOP TEXT
+========================= */
+.head-text-p-hero{
+    position: absolute;
+    top: 60px;
+
+    color: #cfcfcf;
+    font-size: .8rem;
+    font-weight: 300;
+
+    letter-spacing: 1px;
+}
+
+.head-text-p-hero-span{
+    position: relative;
+
+    padding-left: 28px;
+}
+
+/* circulo verde */
+.head-text-p-hero-span::before{
+    content: "";
+
+    position: absolute;
+
+    width: 10px;
+    height: 10px;
+
+    background: #39ff14;
+
+    border-radius: 50%;
+
+    left: 0;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    box-shadow: 0 0 12px #39ff14;
+}
+
+/* borde */
+.head-text-p-hero-span::after{
+    content: "";
+
+    position: absolute;
+
+    width: 22px;
+    height: 16px;
+
+    border: 1px solid #39ff14;
+    border-radius: 20px;
+
+    left: -8px;
+    top: 50%;
+
+    transform: translateY(-50%);
+}
+
+/* =========================
+   HERO TITLE
+========================= */
+.content-title-hero{
+    margin-bottom: 30px;
+}
+
+.content-title-hero-h2-part-1{
+    color: #39ff14;
+
+    font-size: .9rem;
+    font-weight: 500;
+
+    letter-spacing: 14px;
+
+    margin-bottom: 30px;
+}
+
+.content-title-hero-h1-part-2{
+    font-size: 10rem;
+    font-weight: 300;
+
+    color: #c9d09d;
+
+    line-height: 1;
+
+    letter-spacing: 5px;
+}
+
+/* =========================
+   DESCRIPTION
+========================= */
+.description-content-duo{
+    margin-bottom: 35px;
+}
+
+.text-description-about-duo{
+    color: #c9d09d;
+
+    font-size: 2rem;
+    font-weight: 400;
+
+    margin-bottom: 10px;
+}
+
+.text-menor-description-names-partners{
+    color: rgba(255,255,255,0.45);
+
+    letter-spacing: 10px;
+    font-size: .9rem;
+}
+
+/* =========================
+   HR LINE
+========================= */
+hr{
+    width: 250px;
+    border: none;
+    height: 1px;
+
+    background: rgba(255,255,255,0.15);
+
+    position: relative;
+
+    margin-bottom: 55px;
+}
+
+hr::after{
+    content: "";
+
+    position: absolute;
+
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+
+    background: #39ff14;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    box-shadow: 0 0 10px #39ff14;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.links-content-duo{
+    display: flex;
+    gap: 25px;
+
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.link-partner-kairo,
+.link-partner-juanes{
+    text-decoration: none;
+
+    padding: 18px 40px;
+
+    border-radius: 3px;
+
+    font-size: 1rem;
+    font-weight: 500;
+
+    transition: .3s ease;
+}
+
+/* botón kairo */
+.link-partner-kairo{
+    background: #5f2b83;
+    color: #ffffff;
+}
+
+.link-partner-kairo:hover{
+    transform: translateY(-5px);
+
+    background: #7535a1;
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* botón juanes */
+.link-partner-juanes{
+    background: #39ff14;
+    color: #000;
+}
+
+.link-partner-juanes:hover{
+    transform: translateY(-5px);
+
+    box-shadow: 0 0 20px rgba(57,255,20,.4);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media(max-width: 768px){
+
+    .content-title-hero-h1-part-2{
+        font-size: 6rem;
+    }
+
+    .text-description-about-duo{
+        font-size: 1.3rem;
+    }
+
+    .text-menor-description-names-partners{
+        letter-spacing: 5px;
+    }
+}
+
+@media(max-width: 500px){
+
+    body{
+        padding: 20px;
+    }
+
+    .content-title-hero-h1-part-2{
+        font-size: 4rem;
+    }
+
+    .content-title-hero-h2-part-1{
+        letter-spacing: 8px;
+        font-size: .7rem;
+    }
+
+    .text-description-about-duo{
+        font-size: 1rem;
+    }
+
+    .link-partner-kairo,
+    .link-partner-juanes{
+        width: 100%;
+    }
+}
