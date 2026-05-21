@@ -12,14 +12,11 @@
 body{
     min-height: 100vh;
     font-family: 'Montserrat', sans-serif;
-
     display: flex;
     justify-content: center;
 
     padding: 80px 20px;
-
     overflow-x: hidden;
-
     background:
         radial-gradient(circle at top left,
         rgba(255,255,255,0.08),
