@@ -1,7 +1,7 @@
 <!-- SE DEBE REUTILIZAR CÓDIGO -->
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +16,7 @@
         <a href="#hobbies">HOBBIES</a>
         <a href="#musica">MUSICA</a>
         <a href="#contacto">CONTACTO</a>
-        <a href="../../index.html">REGRESAR</a>
+        <a href="../../index.php">REGRESAR</a>
     </nav>
     <hr>
 
