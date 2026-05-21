@@ -15,9 +15,10 @@ body{
 
     display: flex;
     justify-content: center;
-    align-items: center;
 
-    overflow: hidden;
+    padding: 80px 20px;
+
+    overflow-x: hidden;
 
     background:
         radial-gradient(circle at top left,
@@ -31,6 +32,7 @@ body{
         #442b55 100%
         );
 }
+
 
 /* =========================
    MAIN CONTAINER
@@ -203,6 +205,16 @@ hr::after{
     justify-content: center;
 }
 
+.links-content-duo{
+    display: flex;
+    gap: 25px;
+
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin-bottom: 60px;
+}
+
 .link-partner-kairo,
 .link-partner-juanes{
     text-decoration: none;
@@ -284,4 +296,113 @@ hr::after{
     .link-partner-juanes{
         width: 100%;
     }
+}
+
+/* =========================
+   GUESTBOOK
+========================= */
+
+.guestbook-section{
+    width: 100%;
+    max-width: 700px;
+    padding: 40px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    margin-bottom: 60px;
+}
+
+.guestbook-section h2{
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.guestbook-section p{
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 25px;
+}
+
+.guestbook-form{
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.guestbook-form input,
+.guestbook-form textarea{
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.08);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    outline: none;
+    transition: .3s ease;
+}
+
+.guestbook-form input:focus,
+.guestbook-form textarea:focus{
+    border: 1px solid #39ff14;
+    box-shadow: 0 0 10px rgba(57,255,20,.3);
+}
+
+.guestbook-form textarea{
+    min-height: 140px;
+    resize: none;
+}
+
+.guestbook-form button{
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    background: #39ff14;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.guestbook-form button:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px rgba(57,255,20,.4);
+}
+
+/* mensajes */
+
+.messages-container{
+    margin-top: 40px;
+    text-align: left;
+}
+
+.messages-container h3{
+    color: white;
+    margin-bottom: 20px;
+}
+
+.message-card{
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.message-card h4{
+    color: #39ff14;
+    margin-bottom: 10px;
+}
+
+.message-card p{
+    color: rgba(255,255,255,0.85);
+    margin-bottom: 10px;
+}
+
+.message-card small{
+    color: rgba(255,255,255,0.4);
 }
